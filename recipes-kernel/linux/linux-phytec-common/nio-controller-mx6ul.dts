@@ -1,0 +1,99 @@
+// SPDX-License-Identifier: (GPL-2.0+ OR MIT)
+/*
+ * Author: Llewellyn Fernandes <llewellynkbc@gmail.com>
+ */
+
+/dts-v1/;
+#include "imx6ul.dtsi"
+#include "imx6ul-phytec-phycore-som.dtsi"
+#include "imx6ul-phytec-segin.dtsi"
+//#include "nio-controller.dtsi"
+#include "imx6ul-phytec-segin-peb-av-02.dtsi"
+#include "imx6ul-phytec-segin-peb-eval-01.dtsi"
+#include "imx6ul-phytec-peb-wlbt-01.dtsi"
+#include "imx6ul-phytec-peb-wlbt-05.dtsi"
+
+/ {
+	model = "PHYTEC phyBOARD-Segin i.MX 6ULL Full Featured with NAND";
+	compatible = "phytec,imx6ull-pbacd10", "phytec,imx6ull-pcl063",
+		     "fsl,imx6ull";
+};
+
+&adc1 {
+	status = "okay";
+};
+
+&can1 {
+	status = "okay";
+};
+
+&codec {
+	status = "okay";
+};
+
+&csi {
+	status = "okay";
+};
+
+&ethphy1 {
+	compatible = "ethernet-phy-id0022.1560";
+	status = "okay";
+};
+
+&ethphy2 {
+	compatible = "ethernet-phy-id0022.1560";
+	status = "okay";
+};
+
+&fec1 {
+	status = "okay";
+};
+
+&fec2 {
+	status = "okay";
+};
+
+&gpmi {
+	status = "okay";
+};
+
+&i2c_rtc {
+	status = "okay";
+};
+
+&reg_can1_en {
+	status = "okay";
+};
+
+&reg_sound_1v8 {
+	status = "okay";
+};
+
+&reg_sound_3v3 {
+	status = "okay";
+};
+
+&sai2 {
+	status = "okay";
+};
+
+&sound {
+	status = "okay";
+};
+
+&uart5 {
+	status = "okay";
+};
+
+&usbotg1 {
+	status = "okay";
+};
+
+&usbotg2 {
+	status = "okay";
+};
+
+&usdhc1 {
+	status = "okay";
+};
+
